@@ -4,6 +4,7 @@
  * Author: mav peri
  *
  */
+namespace mph2labs\AwsSqsHelper;
 
 use Aws\Sdk;
 
@@ -18,6 +19,14 @@ class AwsSqsHelper
     public $data;
     public $csv;
 
+    /**
+     *
+     * AwsSqsHelper constructor.
+     *
+     * @param $region
+     * @param $key
+     * @param $secret
+     */
     public function __construct($region, $key, $secret)
     {
         //initialise
