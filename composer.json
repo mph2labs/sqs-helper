@@ -6,7 +6,7 @@
     "aws/aws-sdk-php": "^3.62"
   },
   "autoload": {
-    "psr-0" : {
+    "psr-4" : {
       "AwsSqsHelper\\" : "src/AwsHelper/"
     }
   }
