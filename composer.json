@@ -1,5 +1,5 @@
 {
-  "name": "mph2labs/aws-sqs-helper",
+  "name": "mph2labs/AwsSqsHelper",
   "description": "A simple helper that allows you to get a list of queues and their pending messages",
   "require": {
     "php": "^5.5.9 || ^7.0",
@@ -7,7 +7,7 @@
   },
   "autoload": {
     "psr-0" : {
-      "mph2labs\\AwsHelper\\Sqs" : "src"
+      "mph2labs\\AwsSqsHelper" : "src"
     }
   }
 }
