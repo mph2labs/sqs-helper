@@ -1,7 +1,7 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mav peri
+ *
+ * Author: mav peri
  *
  */
 
@@ -11,12 +11,19 @@ class AwsSqsHelper
 {
     protected $client;
     protected $queues;
+    protected $region;
+    protected $key;
+    protected $secret;
+
     public $data;
     public $csv;
 
-    public function __construct()
+    public function __construct($region, $key, $secret)
     {
         //initialise
+        $this->region = $region;
+        $this->key = $key;
+        $this->secret = $secret;
         $this->data = [];
         $this->csv = "";
 
@@ -31,10 +38,10 @@ class AwsSqsHelper
     {
         $sdk = new \Aws\Sdk([
                 'version' => 'latest',
-                'region' => 'aws region',
+                'region' => $this->region,
                 'credentials' => [
-                    'key' => 'your key',
-                    'secret' => 'your key secret',
+                    'key' => $this->key,
+                    'secret' => $this->secret,
                 ]
             ]
         );
