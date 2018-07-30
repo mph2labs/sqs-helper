@@ -1,6 +1,8 @@
 {
   "name": "mph2labs/aws-sqs-helper",
+  "description": "A simple helper that allows you to get a list of queues and their pending messages",
   "require": {
+    "php": "^5.5.9 || ^7.0",
     "aws/aws-sdk-php": "^3.62"
   },
   "autoload": {
