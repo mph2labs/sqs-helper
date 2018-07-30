@@ -4,11 +4,11 @@
  * Author: mav peri
  *
  */
-namespace mph2labs;
+namespace mph2labs\AwsHelper;
 
 use Aws\Sdk;
 
-class AwsSqsHelper
+class Sqs
 {
     protected $client;
     protected $queues;
