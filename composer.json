@@ -1,0 +1,11 @@
+{
+  "name": "mph2labs/aws-sqs-helper",
+  "require": {
+    "aws/aws-sdk-php": "^3.62"
+  },
+  "autoload": {
+    "psr-0" : {
+      "mph2labs\\AwsSqsHelper" : "src"
+    }
+  }
+}
