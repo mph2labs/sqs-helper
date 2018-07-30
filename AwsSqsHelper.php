@@ -4,7 +4,7 @@
  * Author: mav peri
  *
  */
-namespace mph2labs\AwsSqsHelper;
+namespace mph2labs;
 
 use Aws\Sdk;
 
