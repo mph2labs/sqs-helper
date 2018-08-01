@@ -5,7 +5,7 @@
     "php": "^5.5.9 || ^7.0",
     "aws/aws-sdk-php": "^3.62"
   },
-  "autoload": {
+  "autoload": { 
     "psr-4" : {
       "mph2labs\\Sqs" : "src/"
     }
