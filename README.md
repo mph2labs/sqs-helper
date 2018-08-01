@@ -28,3 +28,12 @@ The class has a number of properties containing data from SQS
 * csv
 
    A csv version of each queue that can be used for exporting   
+
+### available methods 
+* getQueueExists
+
+   Check if a queue exists   
+   
+* getVisibleMessagesForQueue
+
+   Get the number of visible messages
