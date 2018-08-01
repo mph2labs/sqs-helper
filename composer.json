@@ -7,7 +7,7 @@
   },
   "autoload": {
     "psr-4" : {
-      "aws-sqs-helper\\" : "src/"
+      "mph2labs\\Sqs" : "src/"
     }
   }
 }
