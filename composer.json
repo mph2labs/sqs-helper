@@ -1,6 +1,12 @@
 {
   "name": "mph2labs/AwsSqsHelper",
   "description": "A simple helper that allows you to get a list of queues and their pending messages",
+  "authors": [
+    {
+      "name": "Mav Peri",
+      "email": "mp@h2labs.co.uk"
+    }
+  ],
   "require": {
     "php": "^5.5.9 || ^7.0",
     "aws/aws-sdk-php": "^3.62"

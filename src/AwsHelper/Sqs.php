@@ -39,7 +39,6 @@ class Sqs
         //get data
         $this->getClient();
         $this->getAllQueues();
-        $this->getSortedResults(); // you must update this if you are not using laravel framework or comment out
         $this->getCSV();
     }
 
@@ -85,16 +84,6 @@ class Sqs
         );
         $this->data[$queueURL]['visibleMessages'] = $result->get('Attributes')['ApproximateNumberOfMessages'];
         $this->data[$queueURL]['queue'] = substr($queueURL, strrpos($queueURL, '/') + 1);
-    }
-
-    /**
-     * sort the results by pending messages
-     */
-    private function getSortedResults()
-    {
-        //collect is a laravel framework helper which I use for sorting by volume, if not using laravel you can change this to your prefered option or comment out
-        $collection = collect($this->data);
-        $this->data = $collection->sortByDesc('visibleMessages');
     }
 
     /**
