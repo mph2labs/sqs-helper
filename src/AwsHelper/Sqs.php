@@ -4,7 +4,7 @@
  * Author: mav peri
  *
  */
-namespace AwsHelper;
+namespace Mph2labs\AwsHelper;
 
 use Aws\Sdk;
 
