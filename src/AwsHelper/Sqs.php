@@ -100,4 +100,38 @@ class Sqs
         $this->csv = implode("\n", $lines);
         //you can now store the csv file somewhere ...
     }
+
+    /**
+     *
+     * returns the number of visible messages for a queue
+     *
+     * @param $queueName
+     * @return bool|integer
+     */
+    public function getVisibleMessagesForQueue($queueName){
+          $result = false;
+          foreach($this->data as $key=>$queue){
+              if($queue['queue'] === $queueName){
+                  $result = $queue['visibleMessages'];
+              }
+          }
+          return $result;
+    }
+
+    /**
+     *
+     * check if a queue exists or not
+     *
+     * @param $queueName
+     * @return bool
+     */
+    public function getQueueExists($queueName){
+        $result = false;
+        foreach($this->data as $key=>$queue){
+            if($queue['queue'] === $queueName){
+                $result = true;
+            }
+        }
+        return $result;
+    }
 }
